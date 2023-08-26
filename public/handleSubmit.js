@@ -7,19 +7,27 @@ let numQuestion = localStorage.getItem('input2');
 let maxMark = localStorage.getItem('input3');
 
 submitbtn.addEventListener('click', async function () {
-  console.log(topic);
-  console.log(numQuestion);
-  console.log(maxMark);
+  // Display loading message in the anchor tag.
+  submitbtn.textContent = 'Loading';
 
-  const res = await axios({
-    method: 'GET',
-    url: 'https://quesio.onrender.com/generateQuestion',
-    data: {
-      topic,
-      maxMark,
-      numQuestion,
-    },
-  });
-  console.log('In Handler');
-  console.log(res.data);
+  try {
+    const res = await axios.get(
+      'https://quesio.onrender.com/generateQuestion',
+      {
+        params: {
+          topic,
+          maxMark,
+          numQuestion,
+        },
+      }
+    );
+    console.log(res.data.data);
+
+    localStorage.setItem('resData', JSON.stringify(res.data.data));
+    console.log('In Handler');
+  } catch (error) {
+    console.error('Error:', error);
+  } finally {
+    window.location.href = 'ResultPage.html';
+  }
 });

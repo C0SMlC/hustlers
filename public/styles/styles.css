@@ -132,7 +132,7 @@ body {
 
 .page-title-large {
   font-size: 9rem; /* Adjust font size for Question */
-  margin-bottom: 0.5rem; /* Reduce margin for tighter spacing */
+  margin-bottom: 1.5rem; /* Reduce margin for tighter spacing */
   color: white;
 }
 
@@ -182,6 +182,11 @@ body {
 
 .next-button:hover {
   background-color: #c1902d;
+}
+
+textarea {
+  font-family: 'Your-Font-Name', sans-serif;
+  line-height: 2;
 }
 
 .Submit-button {
@@ -240,8 +245,9 @@ body {
   border-radius: 0.5rem;
   color: white;
   margin-bottom: 1rem;
+  margin-top: 1.5rem;
   resize: vertical;
-  min-height: 150px;
+  min-height: 450px;
 }
 
 #Copybtn {
