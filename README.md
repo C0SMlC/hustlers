@@ -1,6 +1,6 @@
 # Question Generator App
 
-![Project Logo/Image](link_to_logo_or_image.png)
+![Project Logo/Image](https://drive.google.com/file/d/1FMkS2z9cEZEz68csFb0agOukEL4ExkLT/view?usp=sharing)
 
 ## About the Team
 
