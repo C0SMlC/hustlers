@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script defer src="script.js"></script>
+    <title>Ques.io - Question Generator</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="./images/logo.png" alt="Ques.io Logo"
+        /></a>
+      </div>
+    </nav>
+
+    <!-- Question Generator Content -->
+    <div class="question-generator-container">
+      <div class="particle-container" id="particle-container"></div>
+      <h2 class="page-title-large">Questions</h2>
+      <h2 class="page-title-large">Generator</h2>
+      <input
+        type="text"
+        class="input-field topic"
+        id="input1"
+        placeholder="Enter topics here"
+        required
+      />
+      <a
+        class="next-button"
+        href="./numQuestions.html"
+        onclick="storeValueAndNavigate('input1')"
+        >Next</a
+      >
+    </div>
+    <script src="script.js"></script>
+    <script src="particles.js"></script>
+
+  </body>
+</html>
