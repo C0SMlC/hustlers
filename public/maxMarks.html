@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/styles.css" >
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  <script defer src="script.js"></script>
+  <script defer src="handleSubmit.js"></script>
+  <title>Ques.io - Total Questions</title>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+        <a href="index.html">
+        <img src="./images/logo.png" alt="Ques.io Logo"></a>
+  </nav>
+
+  <!-- Total Questions Content -->
+  <div class="question-generator-container">
+    <h2 class="page-title-large">Total</h2>
+    <h2 class="page-title-large">Marks</h2>
+    <input type="number" class="input-field maxMarks" placeholder="Enter the Total Marks" id="input3">
+    <a class="Submit-button" onclick="storeValueAndNavigate('input3')">Submit</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

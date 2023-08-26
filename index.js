@@ -20,7 +20,7 @@ app.use(
 
 app.get('/generateQuestion', async (req, res) => {
   try {
-    const { topic, numQuestion, maxMark } = req.body;
+    const { topic, numQuestion, maxMark } = req.query;;
 
     const openai = new OpenAI({
       apiKey: process.env.API_KEY,
