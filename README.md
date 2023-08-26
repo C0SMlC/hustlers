@@ -15,6 +15,7 @@
 ## About the Project
 
 **Ques.IO** is a web application developed as part of the CodeINovact Hackathon. Our team aimed to create a user-friendly platform that generates questions based on user-defined criteria. The primary goal of our project is to simplify the process of creating questions for educational purposes, exams, and quizzes.
+The **Ques.IO** using OpenAI is a project that aims to automate the process of generating question papers for educational purposes using the power of OpenAI's language generation capabilities. This tool can be particularly useful for educators, teachers, and institutions who need to create a variety of question papers efficiently.
 
 **Key Features:**
 
@@ -22,7 +23,6 @@
 - **AI-Powered Question Generation:** We leverage the OpenAI API to generate high-quality questions tailored to the user's requirements.
 - **Instant Results:** Users receive the generated questions in real-time and can easily copy and use them.
 
-**Intended Impact:**
 
 Our project aims to save educators and content creators valuable time and effort by automating the question generation process. By providing a user-friendly interface and AI-powered solutions, we hope to enhance the efficiency of educational content creation.
 
