@@ -52,6 +52,7 @@ app.get('/generateQuestion', async (req, res) => {
     res.status(404).json({
       status: 'failed',
       message: 'Please Try Again!',
+      error,
     });
   }
 });
