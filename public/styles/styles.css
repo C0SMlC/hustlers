@@ -14,6 +14,8 @@ body {
     rgba(1, 32, 76, 1) 60%,
     rgba(80, 170, 233, 1) 100%
   );
+  background-size: cover;
+  background-position: center;
   margin: 0; /* Remove default body margin */
 }
 
@@ -23,8 +25,6 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-size: cover;
-  background-position: center;
   color: white;
   text-align: center; /* Center text content */
 }
@@ -47,46 +47,30 @@ body {
   color: white;
   font-size: 1rem;
   text-decoration: none;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   transition: all 0.5s ease;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 .generate-button:hover {
-  background-color: #c1902d;
-  transform: scale(1.05); /* Enlarge on hover */
+  background-color: #e9ab31;
+  transform: scale(1.2); /* Enlarge on hover */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
 }
 
 .question-generator-container {
-  background: linear-gradient(
-    173deg,
-    rgba(99, 68, 207, 1) 0%,
-    rgba(1, 32, 76, 1) 60%,
-    rgba(80, 170, 233, 1) 100%
-  );
-  color: white;
-  text-align: center;
-  padding: 3rem;
-  min-height: calc(100vh - 2rem); /* Adjust for the navbar padding */
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
+  height: 100vh;
+  color: white;
+  text-align: center; /* Center text content */
 }
 
 /* index.html */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-}
 
 /* Navbar */
 .navbar {
@@ -110,28 +94,14 @@ body {
 }
 
 .logo img:hover {
-  transform: scale(1.5);
+  transform: scale(1.7);
 }
 
 /* Question Generator Content */
-.question-generator-container {
-  background: linear-gradient(
-    173deg,
-    rgba(99, 68, 207, 1) 0%,
-    rgba(1, 32, 76, 1) 60%,
-    rgba(80, 170, 233, 1) 100%
-  );
-  color: white;
-  text-align: center;
-  padding: 3rem;
-  min-height: calc(100vh - 2rem); /* Adjust for the navbar padding */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+
 
 .page-title-large {
-  font-size: 9rem; /* Adjust font size for Question */
+  font-size: 7rem; /* Adjust font size for Question */
   margin-bottom: 1.5rem; /* Reduce margin for tighter spacing */
   color: white;
 }
@@ -159,12 +129,12 @@ body {
   cursor: pointer;
   transition: background-color 0.3s ease;
   width: fit-content;
-  margin-left: 82%;
+  margin-left: 73%;
   text-decoration: none;
 }
 
 .next-button-1:hover {
-  background-color: #c1902d;
+  background-color: #e9ab31;
 }
 .next-button {
   padding: 1rem 1.5rem; /* Adjust padding for smaller button */
@@ -176,12 +146,12 @@ body {
   cursor: pointer;
   transition: background-color 0.3s ease;
   width: fit-content;
-  margin-left: 82%;
+  margin-left: 73%;
   text-decoration: none;
 }
 
 .next-button:hover {
-  background-color: #c1902d;
+  background-color: #e9ab31;
 }
 
 textarea {
@@ -199,34 +169,24 @@ textarea {
   cursor: pointer;
   transition: background-color 0.3s ease;
   width: fit-content;
-  margin-left: 82%;
+  margin-left: 73%;
   text-decoration: none;
 }
 
-.return-button {
-  padding: 1rem 1.5rem; /* Adjust padding for smaller button */
-  background-color: #565757;
-  color: white;
-  font-size: 1rem; /* Adjust font size for smaller button */
-  border: none;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  width: fit-content;
-  margin-left: 82%;
-  text-decoration: none;
-}
-.return-button:hover {
-  background-color: #c1902d;
-}
+
 
 .Submit-button:hover {
-  background-color: #c1902d;
+  background-color: #e9ab31;
 }
 
 .result-container {
-  text-align: center;
-  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+  text-align: center; /* Center text content */
 }
 
 .result-container p {
@@ -264,15 +224,24 @@ textarea {
 }
 
 #Copybtn:hover {
-  background-color: #c1902d;
+  background-color: #e9ab31;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+  .site-title{
+    font-size:4rem;
+  }
+  .site-description{
+    font-size: 0.7rem;
+  }
   .page-title-large {
     font-size: 3rem;
   }
-
+  .generate-button {
+    padding: 0.6rem 1rem;
+    font-size: 0.7rem;
+  }
   .input-field {
     font-size: 1rem;
     padding: 0.8rem;
@@ -281,19 +250,19 @@ textarea {
   .next-button {
     font-size: 0.9rem;
     padding: 0.7rem 1.6rem;
-    margin-left: 65%;
+    margin-left: 62%;
   }
 
   .Submit-button {
     font-size: 0.9rem;
     padding: 0.7rem 1.6rem;
-    margin-left: 65%;
+    margin-left: 62%;
   }
 
   .next-button-1 {
     font-size: 0.9rem;
     padding: 0.7rem 1.6rem;
-    margin-left: 65%;
+    margin-left: 62%;
   }
 
   .result-container p {
@@ -309,6 +278,84 @@ textarea {
   #Copybtn {
     font-size: 0.8rem;
     padding: 0.5rem 1rem;
-    margin-left: 65%;
+    margin-left: 62%;
   }
 }
+
+/* Your existing styles here */
+
+.particle-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.particle {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+@keyframes moveParticle {
+  0% {
+    opacity: 0;
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-50px) translateX(50px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100px) translateX(100px);
+  }
+}
+
+/*text animations and more*/
+.site-title {
+  transition: transform 0.8s, opacity 0.3s;
+  animation: glowing 2s infinite;
+}
+
+.site-title:hover {
+  transform: scale(1.5);
+  opacity: 0.8;
+}
+
+@keyframes glowing {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+}
+
+.site-description {
+  transition: transform 0.3s, opacity 0.3s;
+
+}
+
+.site-description:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+.page-title-large{
+  transition: transform 0.6s, opacity 0.3s;
+  animation: glowing 2s infinite;
+}
+
+.page-title-large:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
