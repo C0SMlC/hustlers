@@ -36,7 +36,7 @@ During the development of the **Ques.IO**, our team faced various challenges, in
 
 ## Optional Links
 
-- **Demo:** [Link to a live demo of the Question Generator App (if available)]
+- **Demo:** [https://hustlers-woad.vercel.app/]
 - **Project Repository:** [https://github.com/C0SMlC/hustlers/]
 - **OpenAI API Documentation:** [https://platform.openai.com/docs/api-reference/introduction]
 
